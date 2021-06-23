@@ -7,12 +7,15 @@
 4. Place your IWADS under `/Emus/Doom.pak`
     * By default this repo will not contain any commercial IWAD files. These need to be provided from legally owned retail copies of Doom and Doom 2. Alternatively, [FreeDoom Phase 1 & 2](https://github.com/freedoom/freedoom/releases/download/v0.12.1/freedoom-0.12.1.zip) also work in place of Doom 1 & 2 for some mods.
 5. Place your mods under `/Emus/Doom.pak/mods` either in the root of the directory or in their own sub-directories. It doesn't matter so long as the location is mapped properly in your `Game.doom` file under `/Roms/Doom`
-    * See the section below for `*.doom` file creation
-6. After booting MinUI, feel free to configure your controls and video settings using the new "Doom Setup" option under "Tools"
-7. Once your settings are all taken care of, navigate back to the Doom folder added to your systems. Your `*.doom` files will be visible here and act as your "roms", telling Chocolate-Doom what WADs and mods to launch
+6. Place your `*.doom` files under `/Roms/Doom`. These files are nothing but text files that act as your "roms", telling Chocolate-Doom what WADs and mods to launch from where.
+    * Keep reading for a detailed breakdown of these files and how to create them. For this repo I've created files for Freedoom 1 & 2, ChexQuest, Doom 1 & 2 and the Final Doom episodes TNT and Plutonia.
+7. After booting MinUI, feel free to configure your controls and video settings using the new "Doom Setup" option under "Tools"
+8. Once your settings are all taken care of, navigate back to the Doom folder added to your systems. 
 
 ## Making a `*.doom` File
 The `*.doom` file is just the rest of the command, essentially, being fed to our `launch.sh` script under `/Emus/Doom.pak`. You will always need to specify your `-iwad` argument since this is the file that needs to be loaded first. If this file isn't mapped to properly or doesn't exist, Chocolate Doom will default to launching Doom 2 (or FreeDoom 2) for some reason.
+
+Keep in mind that `*.doom` files are CASE SENSITIVE meaning `doom2.wad` is not the same as `DOOM2.WAD`. When creating your files, make sure you are pointing to the right places and have everything spelled properly. It's also worth noting that (currently) I haven't figured out a way to have spaces in the `*.doom` files, so you will have to use dashes or hyphens in the filenames. (Eg. `Plutonia_2.doom` vs `Plutonia 2.doom`)
 
 ### Understanding Arguments:
 The main arguments we will be using are `-iwad`, `-merge`, `-deh` and `-file`
