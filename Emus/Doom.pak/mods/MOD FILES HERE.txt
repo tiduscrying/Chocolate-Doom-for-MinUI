@@ -1,1 +1,2 @@
-all *.WAD files and *.DEH files should be placed here either in the root of the folder or in a dedicated folder per wad. Location isn't as important so long as it's properly pointed to in the corresponding *.doom file under /Roms
+All *.WAD files and *.DEH files should be placed here either in the root of the folder or in a dedicated folder per wad.
+Location isn't as important so long as it's properly pointed to in the corresponding *.doom file under /Roms
