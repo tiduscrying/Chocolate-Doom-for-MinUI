@@ -1,8 +1,8 @@
 # Chocolate Doom for MinUI _(Now in a way that makes more sense?)_
 
 ## Instructions
-1. Download the repo above by hitting the "Code" button and selecting "Download ZIP". Inside should be three folders, "Emus", "Roms" and "Tools"
-2. Extract these folders to the root of your SD card with MinUI installed
+1. Download the repo above by hitting the "Code" button and selecting "Download ZIP". Inside should be three folders, "Emus", "Roms" and "Tools". Ignore the github stuff
+2. Extract these three folders to the root of your SD card with MinUI installed
 3. Place your IWADS under `/Emus/Doom.pak`
     * By default this repo will not contain any commercial IWAD files. These need to be provided from legally owned retail copies of Doom and Doom 2. Alternatively, [FreeDoom Phase 1 & 2](https://github.com/freedoom/freedoom/releases/download/v0.12.1/freedoom-0.12.1.zip) also work in place of Doom 1 & 2 for some mods.
 4. Place your mods under `/Emus/Doom.pak/mods` either in the root of the directory or in their own sub-directories. It doesn't matter so long as the location is mapped properly in your `Game.doom` file under `/Roms/Doom`
