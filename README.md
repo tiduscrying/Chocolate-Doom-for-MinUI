@@ -1,16 +1,15 @@
 # Chocolate Doom for MinUI _(Now in a way that makes more sense?)_
 
 ## Instructions
-1. Download the repo above by hitting the "Code" button and selecting "Download ZIP"
-2. Inside should be three folders, "Emus", "Roms" and "Tools"
-3. Extract these folders to the root of your SD card with MinUI installed
-4. Place your IWADS under `/Emus/Doom.pak`
+1. Download the repo above by hitting the "Code" button and selecting "Download ZIP". Inside should be three folders, "Emus", "Roms" and "Tools"
+2. Extract these folders to the root of your SD card with MinUI installed
+3. Place your IWADS under `/Emus/Doom.pak`
     * By default this repo will not contain any commercial IWAD files. These need to be provided from legally owned retail copies of Doom and Doom 2. Alternatively, [FreeDoom Phase 1 & 2](https://github.com/freedoom/freedoom/releases/download/v0.12.1/freedoom-0.12.1.zip) also work in place of Doom 1 & 2 for some mods.
-5. Place your mods under `/Emus/Doom.pak/mods` either in the root of the directory or in their own sub-directories. It doesn't matter so long as the location is mapped properly in your `Game.doom` file under `/Roms/Doom`
-6. Place your `*.doom` files under `/Roms/Doom`. These files are nothing but text files that act as your "roms", telling Chocolate-Doom what WADs and mods to launch from where.
+4. Place your mods under `/Emus/Doom.pak/mods` either in the root of the directory or in their own sub-directories. It doesn't matter so long as the location is mapped properly in your `Game.doom` file under `/Roms/Doom`
+5. Place your `*.doom` files under `/Roms/Doom`. These files are nothing but text files that act as your "roms", telling Chocolate-Doom what WADs and mods to launch from where.
     * Keep reading for a detailed breakdown of these files and how to create them. For this repo I've created files for Freedoom 1 & 2, ChexQuest, Doom 1 & 2 and the Final Doom episodes TNT and Plutonia.
-7. After booting MinUI, feel free to configure your controls and video settings using the new "Doom Setup" option under "Tools"
-8. Once your settings are all taken care of, navigate back to the Doom folder added to your systems. 
+6. After booting MinUI, feel free to configure your controls and video settings using the new "Doom Setup" option under "Tools"
+7. Once your settings are all taken care of, navigate back to the Doom folder added to your systems. 
 
 ## Making a `*.doom` File
 The `*.doom` file is just the rest of the command, essentially, being fed to our `launch.sh` script under `/Emus/Doom.pak`. You will always need to specify your `-iwad` argument since this is the file that needs to be loaded first. If this file isn't mapped to properly or doesn't exist, Chocolate Doom will default to launching Doom 2 (or FreeDoom 2) for some reason.
