@@ -40,10 +40,13 @@ The main arguments we will be using are `-iwad`, `-merge`, `-deh` and `-file`
 -iwad Doom2.wad -deh mods/atcud19.deh -merge mods/alitcsf.wad -file mods/alitcsnd.wad mods/alitcwad.wad
 ~~~
 
-## How can I find some pre-made `*.doom` files?
-scooterpsu has done a fantastic job compiling some great vanilla compatible Doom mods for use on MiyooCFW [here](https://github.com/scooterpsu/chocolate-doom-modlauncher). You can download any of their packs and play those mods on MinUI so long as the files are placed in the right locations. 
+## Where can I get some pre-made `*.doom` files?
+scooterpsu has done a fantastic job compiling some great vanilla compatible Doom mods for use on MiyooCFW/OpenDingux [here](https://github.com/scooterpsu/chocolate-doom-modlauncher). You can download any of the packs and play those mods on MinUI so long as the files are placed in the right locations. 
 
 Place the `*.doom` files under `/Roms/Doom` and the mod folders under `/Emus/Doom/mods`
+
+## Controls
+![Controls](https://github.com/tiduscrying/Chocolate-Doom-for-MinUI/blob/main/controls.png)
 
 ## Special Thanks
 * [shauninman](https://github.com/shauninman) for creating the awesome [MinUI](https://github.com/shauninman/MinUI) that this is all done for
